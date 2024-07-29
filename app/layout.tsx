@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils"
 import { Metadata } from "next"
 import { ClerkProvider } from "@clerk/nextjs"
 import { dark } from "@clerk/themes"
+import HP_Footer from "@/components/HP_Footer"
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -35,6 +36,7 @@ export default function RootLayout({ children }:  {children: React.ReactNode}) {
         )}
       >
         {children}
+          <HP_Footer /> 
       </body>
     </html>
     </ClerkProvider>

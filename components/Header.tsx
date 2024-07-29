@@ -11,14 +11,14 @@ const Header = ({children}: HeaderProps) => {
                 alt='Logo with name'
                 width={120}
                 height={32}
-                className='hidden md:block'
+                className='hidden' /* hidden md:block*/
             />
             <Image 
                 src="/assets/icons/logo-icon.svg"
                 alt='Logo'
                 width={32}
                 height={32}
-                className='hidden md:hidden'
+                className='' /*hidden md:hidden */
             />
         </Link>
         {children}
