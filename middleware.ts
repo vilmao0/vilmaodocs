@@ -1,7 +1,7 @@
 import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
 const safeRoutes = createRouteMatcher([
-  '/docs(.*)',
+  '/docs',
   '/secure-services/ss1-ss1/admin-panel',
 ])
 export default clerkMiddleware((auth, req) =>  {
