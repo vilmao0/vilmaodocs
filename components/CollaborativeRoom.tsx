@@ -13,6 +13,7 @@ const CollaborativeRoom = ({ children }:  {children: React.ReactNode}) => {
                 <Header>
                     <div className="flex w-fit items-center justify-center gap-2">
                     <p className='document-title'>SHARE</p>
+                    </div>
             </div>
             <SignedOut>
                 <SignInButton />
