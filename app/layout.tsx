@@ -1,11 +1,18 @@
 import "./globals.css"
-import { Inter as FontSans } from "next/font/google"
 
+import { Inter as FontSans } from "next/font/google"
 import { cn } from "@/lib/utils"
+
 import { Metadata } from "next"
+
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import { ClerkProvider } from "@clerk/nextjs"
 import { dark } from "@clerk/themes"
+
 import HP_Footer from "@/components/HP_Footer"
+
 import Provider from "./Provider"
 
 const fontSans = FontSans({
@@ -36,6 +43,8 @@ export default function RootLayout({ children }:  {children: React.ReactNode}) {
           fontSans.variable
         )}
       >
+        <Analytics />
+        <SpeedInsights />
         <Provider>
           {children}
           <HP_Footer /> 
