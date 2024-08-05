@@ -22,6 +22,7 @@ const CollaborativeRoom = ({ children }:  {children: React.ReactNode}) => {
             </SignedIn>
             </Header>
             <Editor />
+            </div>
             </ClientSideSuspense>
       </RoomProvider>
     </div>
